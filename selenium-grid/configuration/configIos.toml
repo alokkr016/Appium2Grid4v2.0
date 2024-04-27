@@ -1,0 +1,14 @@
+[server]
+port = 5565
+
+[node]
+detect-drivers = false
+
+[relay]
+# Default Appium server endpoint
+url = "http://127.0.0.1:4733"
+status-endpoint = "/status"
+protocol-version = "HTTP/1.1"
+configs = [
+    "1", "{\"platformName\": \"iOS\", \"appium:platformVersion\": \"17.4\", \"appium:deviceName\": \"iPhone 15 Pro\", \"appium:automationName\": \"XCUITest\"}"
+]
